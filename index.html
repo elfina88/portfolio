@@ -207,6 +207,8 @@
   .pin-card:nth-child(2){ --tilt: 0.6deg; }
   .pin-card:nth-child(3){ --tilt: -0.4deg; }
   .pin-card:nth-child(4){ --tilt: 0.9deg; }
+  .pin-card:nth-child(5){ --tilt: -0.6deg; }
+  .pin-card:nth-child(6){ --tilt: 0.5deg; }
   .pin-card::before{
     content:""; position:absolute; top:-9px; left: 28px; width:16px; height:16px; border-radius:50%;
     background: var(--ember); box-shadow: 0 3px 5px rgba(0,0,0,0.35);
@@ -246,6 +248,12 @@
   .kpi .label{ font-family:'IBM Plex Mono'; font-size: 11.5px; text-transform: uppercase; letter-spacing:.05em; color: rgba(250,247,242,.65); margin-top: 6px; }
   .kpi .note{ font-size: 12.5px; color: rgba(250,247,242,.5); margin-top: 8px; line-height: 1.4; }
 
+  .iteration-note{
+    margin-top: 22px; border: 1px solid var(--line-on-dark); border-radius: 12px;
+    padding: 22px 24px; background: rgba(255,255,255,0.03);
+  }
+  .iteration-note p{ font-size: 14px; line-height: 1.6; color: rgba(250,247,242,.75); margin-top: 8px; }
+
   /* ---------- FOOTER ---------- */
   footer{ padding: 70px 28px 50px; }
   .foot-inner{
@@ -274,7 +282,7 @@
 <header class="hero">
   <div class="ticket">
     <div class="ticket-main">
-      <span class="eyebrow">Admit One · Junior Content Manager Track</span>
+      <span class="eyebrow">Admit One · Content Manager Track</span>
       <h1>Elfina<br><em>Wasley</em></h1>
       <p class="role">UGC creator turned content strategist — three years making short-form content people actually stop scrolling for. Applying for Junior Content Manager.</p>
       <div class="ticket-tags">
@@ -341,7 +349,7 @@
       <div>
         <span class="kicker">02 · Mock Campaign</span>
         <h2>Campaign brief:<br>Meetup</h2>
-        <p>A self-directed case study — not commissioned by Bending Spoons — built to show how I'd approach content strategy for one of your products, following Meetup's 2024 rebrand and the launch of its free organizer plan.</p>
+        <p>A self-directed case study — not commissioned by Bending Spoons — built to show how I'd approach content strategy for one of your products, following Meetup's 2024 rebrand and the launch of its free organiser plan.</p>
       </div>
       <span class="badge-target">Product: Meetup · Self-initiated</span>
     </div>
@@ -350,24 +358,37 @@
       <div class="pin-card reveal">
         <span class="pin-label">Objective</span>
         <h3>Turn scroll-stoppers into first RSVPs</h3>
-        <p>Drive first-RSVP conversions among 18–27 year-olds who discover Meetup through short-form video, using the free organizer plan as a hook to also grow the organizer side of the marketplace.</p>
+        <p>Drive first-RSVP conversions among 18–27 year-olds who discover Meetup through short-form video, using the free organiser plan as a hook to also grow the organiser side of the marketplace.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Audience Insight</span>
-        <h3>Curious, not confident</h3>
-        <p>This audience isn't short on "get off your phone" advice — they're short on proof that showing up alone won't be awkward. Generic wellness content about socialising gets skipped; specific, funny, honest first-hand accounts get watched.</p>
+        <h3>Fear of being perceived, not fear of connecting</h3>
+        <p>Solo attendance isn't blocked by a lack of desire for connection — it's blocked by fear of how it looks. People worry that showing up alone reads as "loner" rather than "brave." Watching someone else go through it first, honestly, lets viewers rehearse that fear from a safe distance — by the time they consider going themselves, they already know what to expect and that the payoff is worth it.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Content Concept</span>
         <h3>"Alone Together"</h3>
-        <p>A UGC-led series following real first-timers through the awkward-to-glad-I-came arc of attending solo. Three content pillars:</p>
+        <p>A UGC-led series that shows the discomfort on screen instead of editing it out — proof the fear passes, told by people who felt it. Four content pillars:</p>
         <div class="pillars">
-          <div class="pillar"><span class="n">01</span> Solo-to-social diaries — POV clips from arrival to leaving with new plans</div>
-          <div class="pillar"><span class="n">02</span> Organiser spotlights — the person behind the event, tied to the new free plan</div>
-          <div class="pillar"><span class="n">03</span> "Was it worth it?" — blunt, unfiltered reviews, good and bad</div>
+          <div class="pillar"><span class="n">01</span> The Anxious Arrival — raw POV from the car park to the door, nerves visibly intact</div>
+          <div class="pillar"><span class="n">02</span> Why Coming Alone Isn't Weird — real attendees say plainly why they came solo and what actually happened</div>
+          <div class="pillar"><span class="n">03</span> Organiser spotlights — the person behind the event, tied to the new free plan</div>
+          <div class="pillar"><span class="n">04</span> The Debrief — honest reflection after, naming the specific payoff gained</div>
         </div>
+      </div>
+
+      <div class="pin-card reveal">
+        <span class="pin-label">Why This, Not That</span>
+        <h3>Rejected the polished testimonial</h3>
+        <p>Considered a straightforward testimonial format — happy attendees speaking to camera about how great Meetup is. Rejected it: polished testimonials read as ads, and this audience is specifically distrustful of anything that looks like it's selling them confidence. Visible discomfort is what makes the reassurance credible.</p>
+      </div>
+
+      <div class="pin-card reveal">
+        <span class="pin-label">Risk & Mitigation</span>
+        <h3>Discomfort must resolve, not linger</h3>
+        <p>Risk: showing real anxiety on screen could discourage rather than reassure if a clip doesn't clearly land on a payoff. Mitigation: every piece of content follows the same arc — nerves shown, then explicitly resolved — so the fear is never the last thing the viewer sees.</p>
       </div>
 
       <div class="pin-card reveal">
@@ -381,24 +402,24 @@
       <span class="pin-label" style="color: var(--gold); margin-bottom:14px; display:block;">Sample Content — Storyboards</span>
       <div class="strip-scroll">
         <div class="strip-card">
-          <span class="idx">01 / Solo-to-social</span>
-          <div class="frame">POV: walking in alone<br>text overlay: "the first 5 minutes are the worst part"</div>
-          <div class="cap">Hook: relatable dread</div>
+          <span class="idx">01 / The Anxious Arrival</span>
+          <div class="frame">POV: sitting in the car park, hand on the door<br>text overlay: "I nearly turned around three times"</div>
+          <div class="cap">Hook: naming the fear on screen</div>
         </div>
         <div class="strip-card">
-          <span class="idx">02 / Organiser spotlight</span>
+          <span class="idx">02 / Not Weird to Come Alone</span>
+          <div class="frame">Direct-to-camera: "I came by myself, here's what actually happened"<br>cut to real footage from the event</div>
+          <div class="cap">Hook: confronting the "loner" fear directly</div>
+        </div>
+        <div class="strip-card">
+          <span class="idx">03 / Organiser spotlight</span>
           <div class="frame">Organiser setting up before guests arrive<br>voiceover on why they started the group</div>
           <div class="cap">Hook: human behind the event</div>
         </div>
         <div class="strip-card">
-          <span class="idx">03 / Was it worth it</span>
-          <div class="frame">Split screen: expectation vs. actual night<br>on-screen text rating out of 10</div>
-          <div class="cap">Hook: honest payoff</div>
-        </div>
-        <div class="strip-card">
-          <span class="idx">04 / Solo-to-social</span>
+          <span class="idx">04 / The Debrief</span>
           <div class="frame">Leaving with new phone contacts<br>"came alone, left with plans for Thursday"</div>
-          <div class="cap">Hook: proof it works</div>
+          <div class="cap">Hook: proof the payoff was worth the fear</div>
         </div>
       </div>
     </div>
@@ -422,8 +443,13 @@
       <div class="kpi">
         <div class="num">6 wks</div>
         <div class="label">Test cadence</div>
-        <div class="note">Weekly pillar-level review, reallocate spend toward best performer</div>
+        <div class="note">Weekly pillar-level review, reallocate spend towards best performer</div>
       </div>
+    </div>
+
+    <div class="iteration-note reveal">
+      <span class="pin-label" style="color: var(--gold);">If The Numbers Underperform</span>
+      <p>If view → profile-visit rate comes in low, the hook isn't landing in the first 2 seconds — test alternate opening frames before touching anything else. If profile → RSVP click is weak but views are strong, the content is being watched but not trusted enough to act on — that points to a bio-link or landing-page problem, not a content problem.</p>
     </div>
   </div>
 </section>
