@@ -175,6 +175,18 @@
     display:flex; align-items:center; justify-content:center; font-size: 18px;
   }
   .ugc-frame .placeholder-label{ font-family:'IBM Plex Mono'; font-size: 11px; text-align:center; padding: 0 20px; opacity: .7; }
+  .photo-grid{
+    aspect-ratio: 9/13;
+    display:grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    background: var(--ink);
+    position: relative;
+  }
+  .photo-grid .platform{
+    position:absolute; top:12px; left:12px; font-family:'IBM Plex Mono'; font-size:10.5px; text-transform:uppercase;
+    letter-spacing:.06em; background: var(--ink); color: var(--paper); padding: 4px 8px; border-radius: 999px; z-index: 2;
+  }
+  .photo-grid img{ width:100%; height:100%; object-fit: cover; display:block; }
   .ugc-meta{ padding: 16px 18px 20px; }
   .ugc-meta .cap{ font-weight:600; font-size: 14.5px; margin-bottom:4px; }
   .ugc-meta .sub{ font-family:'IBM Plex Mono'; font-size: 11.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .04em; }
@@ -284,11 +296,12 @@
     <div class="ticket-main">
       <span class="eyebrow">Admit One · Content Manager Track</span>
       <h1>Elfina<br><em>Wasley</em></h1>
-      <p class="role">UGC creator turned content strategist — three years making short-form content people actually stop scrolling for. Applying for Junior Content Manager.</p>
+      <p class="role">UGC Creator turned content strategist. Three years making short-form content across TikTok and Instagram, from freelance brand work to self-initiated campaigns. Applying for Junior Content Manager.</p>
       <div class="ticket-tags">
         <span class="tag">UGC Production</span>
         <span class="tag">Short-Form Video</span>
         <span class="tag">Campaign Strategy</span>
+        <span class="tag">Data-Driven Experimentation</span>
       </div>
     </div>
     <div class="ticket-stub">
@@ -302,14 +315,14 @@
     </div>
   </div>
 </header>
-<p class="hero-note">Two things live on this page: the UGC content I've actually made, and a mock campaign showing how I'd turn that skill into a strategy for one of your products — Meetup.</p>
+<p class="hero-note">Two things live on this page: the UGC content I've actually created, and a mock campaign demonstrating the skills I've learned into a content strategy for one of your products — Meetup.</p>
 
 <section class="section" id="work">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">01 · Selected Work</span>
       <h2>Content I've<br>made & shipped</h2>
-      <p>A mix of freelance UGC produced during university and on and off while working as a barista — brand-commissioned clips, product demos, and organic-style content built to perform on TikTok and Instagram.</p>
+      <p>A mix of freelance UGC produced during university and intermittently while working as a barista. This includes brand-commissioned clips, product demos, and organic-style content built to perform on TikTok and Instagram.</p>
     </div>
 
     <div class="ugc-grid">
@@ -330,12 +343,25 @@
         <div class="ugc-meta"><div class="cap">BlackGold — Why mushroom elixir beats coffee</div><div class="sub">Paid ad · Testimonial</div></div>
       </div>
       <div class="ugc-card reveal">
-        <div class="ugc-frame"><span class="platform">Instagram</span><div class="play">▶</div><div class="placeholder-label">More coming soon</div></div>
-        <div class="ugc-meta"><div class="cap">Add another clip here</div><div class="sub">Reserved slot</div></div>
+      <div class="ugc-card reveal">
+        <div class="photo-grid">
+          <span class="platform">Photo Set</span>
+          <img src="photos/set1-photo1.jpg" alt="The Saltworks Company product photo">
+          <img src="photos/set1-photo2.jpg" alt="Perfume Parlour product photo">
+          <img src="photos/set1-photo3.jpg" alt="Kind Patches product photo">
+          <img src="photos/set1-photo4.jpg" alt="BlackGold product photo">
+        </div>
+        <div class="ugc-meta"><div class="cap">The Saltworks Company, Perfume Parlour, Kind Patches, BlackGold</div><div class="sub">4 images · Organic-style · Website, thumbnail & social use</div></div>
       </div>
       <div class="ugc-card reveal">
-        <div class="ugc-frame"><span class="platform">TikTok</span><div class="play">▶</div><div class="placeholder-label">More coming soon</div></div>
-        <div class="ugc-meta"><div class="cap">Add another clip here</div><div class="sub">Reserved slot</div></div>
+        <div class="photo-grid">
+          <span class="platform">Photo Set</span>
+          <img src="photos/set2-photo1.jpg" alt="BlackGold product photo">
+          <img src="photos/set2-photo2.jpg" alt="The Saltworks Company product photo">
+          <img src="photos/set2-photo3.jpg" alt="Loop Earplugs product photo">
+          <img src="photos/set2-photo4.jpg" alt="Apple and Bears product photo">
+        </div>
+        <div class="ugc-meta"><div class="cap">BlackGold, The Saltworks Company, Loop Earplugs, Apple and Bears</div><div class="sub">4 images · Organic-style · Website, thumbnail & social use</div></div>
       </div>
     </div>
 
@@ -349,7 +375,7 @@
       <div>
         <span class="kicker">02 · Mock Campaign</span>
         <h2>Campaign brief:<br>Meetup</h2>
-        <p>A self-directed case study — not commissioned by Bending Spoons — built to show how I'd approach content strategy for one of your products, following Meetup's 2024 rebrand and the launch of its free organiser plan.</p>
+        <p>A self-directed case study (not commissioned by Bending Spoons) built to showcase how I'd approach content strategy for one of your products, following Meetup's 2024 rebrand and the launch of its free organiser plan.</p>
       </div>
       <span class="badge-target">Product: Meetup · Self-initiated</span>
     </div>
@@ -357,24 +383,24 @@
     <div class="cork">
       <div class="pin-card reveal">
         <span class="pin-label">Objective</span>
-        <h3>Turn scroll-stoppers into first RSVPs</h3>
+        <h3>From watching to walking through the door</h3>
         <p>Drive first-RSVP conversions among 18–27 year-olds who discover Meetup through short-form video, using the free organiser plan as a hook to also grow the organiser side of the marketplace.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Audience Insight</span>
         <h3>Fear of being perceived, not fear of connecting</h3>
-        <p>Solo attendance isn't blocked by a lack of desire for connection — it's blocked by fear of how it looks. People worry that showing up alone reads as "loner" rather than "brave." Watching someone else go through it first, honestly, lets viewers rehearse that fear from a safe distance — by the time they consider going themselves, they already know what to expect and that the payoff is worth it.</p>
+        <p>Solo attendance isn't blocked by a lack of desire for connection, it's blocked by fear of how it's perceived. People worry that showing up alone reads as "loner" or "no friends", rather than "brave" and "by choice". Watching someone else go through it first, honestly, lets viewers rehearse that fear from a safe distance. By the time they consider going themselves, they already know what to expect and that the payoff is worth it.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Content Concept</span>
-        <h3>"Alone Together"</h3>
-        <p>A UGC-led series that shows the discomfort on screen instead of editing it out — proof the fear passes, told by people who felt it. Four content pillars:</p>
+        <h3>"Going Alone, Together"</h3>
+        <p>A UGC-led series that shows the visible discomfort on screen instead of editing it out. This acts as proof the fear and anxiety passes, told by people who felt it. Four content pillars:</p>
         <div class="pillars">
-          <div class="pillar"><span class="n">01</span> The Anxious Arrival — raw POV from the car park to the door, nerves visibly intact</div>
+          <div class="pillar"><span class="n">01</span> The Anxious Arrival — raw POV from the car park/public transport to the door, nerves visibly intact</div>
           <div class="pillar"><span class="n">02</span> Why Coming Alone Isn't Weird — real attendees say plainly why they came solo and what actually happened</div>
-          <div class="pillar"><span class="n">03</span> Organiser spotlights — the person behind the event, tied to the new free plan</div>
+          <div class="pillar"><span class="n">03</span> Organiser Spotlights — the person behind the event, tied to the new free plan</div>
           <div class="pillar"><span class="n">04</span> The Debrief — honest reflection after, naming the specific payoff gained</div>
         </div>
       </div>
@@ -382,19 +408,19 @@
       <div class="pin-card reveal">
         <span class="pin-label">Why This, Not That</span>
         <h3>Rejected the polished testimonial</h3>
-        <p>Considered a straightforward testimonial format — happy attendees speaking to camera about how great Meetup is. Rejected it: polished testimonials read as ads, and this audience is specifically distrustful of anything that looks like it's selling them confidence. Visible discomfort is what makes the reassurance credible.</p>
+        <p>I considered a straightforward testimonial format showing happy attendees speaking to the camera about how great Meetup is. Rejected it: polished testimonials read as ads, and this audience is specifically distrustful of anything that looks like it's selling them confidence. The visible discomfort is what makes the reassurance credible.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Risk & Mitigation</span>
         <h3>Discomfort must resolve, not linger</h3>
-        <p>Risk: showing real anxiety on screen could discourage rather than reassure if a clip doesn't clearly land on a payoff. Mitigation: every piece of content follows the same arc — nerves shown, then explicitly resolved — so the fear is never the last thing the viewer sees.</p>
+        <p>Risk: showing real anxiety on screen could discourage rather than reassure if a clip doesn't clearly land on a payoff. Mitigation: every piece of content follows the same arc — nerves shown, reduced, and then explicitly resolved — so the fear is never the last thing the viewer sees.</p>
       </div>
 
       <div class="pin-card reveal">
         <span class="pin-label">Format & Cadence</span>
         <h3>Built for the feed, not the brand page</h3>
-        <p>3 posts/week across TikTok + Reels, native captions and pacing, creator-shot rather than studio-shot. Paid boosting behind the top organic performer each week rather than a fixed media plan.</p>
+        <p>3 posts/week across TikTok + Reels, native captions and pacing, creator-shot rather than studio-shot. Paid boosting behind the top organic performer each week rather than a fixed media plan. This cadence is Specific and Measurable (3 posts/week, tracked per pillar), Achievable within a small content team, Relevant to an 18 to 27 year old audience that scrolls daily and responds to native, unpolished formats over studio production, and Time-bound within the 6-week test window, allowing weekly reallocation toward whichever pillar earns trust fastest.</p>
       </div>
     </div>
 
@@ -428,28 +454,33 @@
       <div class="kpi">
         <div class="num">4.5%</div>
         <div class="label">View → profile visit</div>
-        <div class="note">Hypothetical target based on category benchmarks for creator-style content</div>
+        <div class="note">Illustrative target, not researched data. In a real campaign this would be set from Meetup's own funnel figures rather than assumed.</div>
       </div>
       <div class="kpi">
         <div class="num">12%</div>
         <div class="label">Profile → RSVP click</div>
-        <div class="note">Tracked via unique bio link per pillar</div>
+        <div class="note">Illustrative target. Would be tracked via a unique bio link per pillar to see which content drives real intent, not just views.</div>
       </div>
       <div class="kpi">
         <div class="num">+18%</div>
         <div class="label">Organiser sign-ups</div>
-        <div class="note">Uplift goal tied to spotlight pillar, measured against a 4-week pre-campaign baseline</div>
+        <div class="note">Illustrative uplift goal tied to the spotlight pillar, measured against a 4-week pre-campaign baseline once real baseline data is available.</div>
       </div>
       <div class="kpi">
         <div class="num">6 wks</div>
         <div class="label">Test cadence</div>
-        <div class="note">Weekly pillar-level review, reallocate spend towards best performer</div>
+        <div class="note">Weekly pillar-level review, reallocating spend towards the best performer rather than committing to a fixed plan upfront.</div>
       </div>
+    </div>
+
+    <div class="iteration-note reveal" style="margin-top:22px;">
+      <span class="pin-label" style="color: var(--gold);">Why These KPIs</span>
+      <p>These four numbers are illustrative rather than researched. I don't have access to Meetup's real funnel data, so I've used placeholder figures to show the kind of measurement structure I'd set up rather than presenting invented numbers as fact. Each one maps to a SMART goal. Specific, because each metric isolates one exact step in the funnel rather than a vague notion of success. Measurable, because each has a clear tracking method (bio links per pillar, baseline comparisons). Achievable, because targets sit within realistic ranges for creator-style content rather than assuming viral performance. Relevant, because each metric ties directly to the campaign objective of moving someone from watching to attending, not just generating views. Time-bound, because the 6-week cadence forces a regular checkpoint to reallocate effort towards whatever is actually working.</p>
     </div>
 
     <div class="iteration-note reveal">
       <span class="pin-label" style="color: var(--gold);">If The Numbers Underperform</span>
-      <p>If view → profile-visit rate comes in low, the hook isn't landing in the first 2 seconds — test alternate opening frames before touching anything else. If profile → RSVP click is weak but views are strong, the content is being watched but not trusted enough to act on — that points to a bio-link or landing-page problem, not a content problem.</p>
+      <p>If view to profile visit rate comes in low the hook isn't landing in the first 2 seconds. Test alternate opening frames before touching anything else. If profile to RSVP click is weak but views are strong the content is being watched but not trusted enough to act on. That points to a bio link or landing page problem rather than a content problem.</p>
     </div>
   </div>
 </section>
@@ -459,7 +490,6 @@
     <div class="foot-inner">
       <div>
         <h2>Let's make<br>something people<br>RSVP to.</h2>
-        <p class="cta">CV, full UGC reel, and references available on request.</p>
       </div>
       <div class="foot-links">
         <a href="#">Download CV (PDF)</a>
